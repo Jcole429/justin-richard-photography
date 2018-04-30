@@ -1,0 +1,24 @@
+.row
+	.col-12.text-center.pt-60
+		h2 Business Inquires
+		. Email: Jcole429@student.fdu.edu
+		. Phone: (999)-999-9999
+.row.pt-5
+	.col-4
+	.col
+		=form_for @inquiry, :html => {:class => "form-horizontal center"} do |f|
+			.form-group
+				= f.label :name, "Name:", class: "control-label"
+				= f.text_field :name, class: "form-control"
+			.form-group
+				= f.label :email, "Email:", class: "control-label"
+				= f.text_field :email, class: "form-control"
+			.form-group
+				= f.label :phone_number, "Phone Number:", class: "control-label"
+				= f.text_field :phone_number, class: "form-control"
+			.form-group
+				= f.label :text, "Text:", class: "control-label"
+				= f.text_area :text, class: "form-control"
+			.form-group.text-center
+				= f.submit "Submit", class: "btn btn-defualt btn-primary"
+	.col-4

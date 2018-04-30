@@ -1,0 +1,13 @@
+.row 
+	- @images.each_with_index do |f,i|
+		- if i == 1
+			.col-lg-6.pb-30
+				.row
+					.col-12
+						h2.text-center About
+						p Justin first got interested in photography through his reefkeeping hobby and his desire to take higher quality photos of his reef. His interest in photography quickly branched off from an extension of reefkeeping into a hobby of its own.
+      				.col-12
+      					=image_tag("#{f.path}", class: "img-fluid")
+      	-else
+      		.col-lg-6.pb-30
+      			=image_tag("#{f.path}", class: "img-fluid")

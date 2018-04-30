@@ -1,0 +1,4 @@
+.row
+	- @images.each do |f|
+		.col-lg-6.pb-30
+  			=image_tag("#{f.path}", class: "img-fluid")

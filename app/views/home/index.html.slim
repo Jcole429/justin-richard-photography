@@ -1,0 +1,12 @@
+
+- @images.each do |f|
+	- if f.cover == true
+		.row
+			.col
+			.col-lg-6.pb-30
+				a href="#{f.page}"
+					.img-container
+						=image_tag("#{f.path}", class: "img-fluid")
+						.centered =f.category
+			.col
+				
