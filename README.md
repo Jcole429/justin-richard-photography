@@ -14,3 +14,4 @@ Inquiries is where the contact us page posts to. Here I can periodically check t
 * The main controller is app/controllers/home_controler
 * The views are in app/views/home
 * The navbar is app/views/layouts/_header.html.slim
+* CSV Files can be found in the CSV Files folder
