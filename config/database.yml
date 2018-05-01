@@ -23,9 +23,15 @@ test:
   <<: *default
 
 production:
-    url: <%= ENV['DATABASE_URL'] %>
-    adapter: mysql2
-    encoding: utf8
-    database: sys
-    username: root
-    password: Jcole0429!
+  # url: <%= ENV['DATABASE_URL'] %>
+  # adapter: mysql2
+  # encoding: utf8
+  # database: sys
+  # username: root
+  # password: Jcole0429!
+
+  host: ec2-54-204-46-236.compute-1.amazonaws.com
+  database: dfcncmqnngba97
+  user: oewrwdcpxoxlmq
+  port: 5432
+  password: 363758fcae9fcb945cd694116469e2fcae59d74de4e572429a30f62b306818dd
