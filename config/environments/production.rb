@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   DATABASE_URL = "mysql2://b54ef664e78cb2:8fdc23aa@us-cdbr-iron-east-05.cleardb.net/heroku_40585ba1e9859b0?reconnect=true"
+  
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -22,6 +24,11 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  if ENV["RAILS_LOG_TO_STDOUT"].present?
+    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger.formatter = config.log_formatter
+    config.logger = ActiveSupport::TaggedLogging.new(logger)
+  end
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
