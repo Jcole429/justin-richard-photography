@@ -9,3 +9,8 @@ There are two tables in my database:
 Images serves the purpose of storing all of the filepaths for the images I want to use on my website. I can populate the category pages dynamically because of this which makes it much easier to add and remove photos.
 
 Inquiries is where the contact us page posts to. Here I can periodically check to see if I have any new business inquiries.
+
+
+* The main controller is app/controllers/home_controler
+* The views are in app/views/home
+* The navbar is app/views/layouts/_header.html.slim
