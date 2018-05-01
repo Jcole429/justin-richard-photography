@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For my website I used the Ruby on Rails web framework with a MySQL database for development and a Postgres database for production. I deployed the app to the Heroku cloud platform for production.
 
-Things you may want to cover:
+There are two tables in my database:
+* Images
+* Inquiries
 
-* Ruby version
+Images serves the purpose of storing all of the filepaths for the images I want to use on my website. I can populate the category pages dynamically because of this which makes it much easier to add and remove photos.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Inquiries is where the contact us page posts to. Here I can periodically check to see if I have any new business inquiries.
