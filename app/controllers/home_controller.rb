@@ -29,7 +29,7 @@ class HomeController < ApplicationController
     @inquiry.text = params[:inquiry]["text"]
     @inquiry.email = params[:inquiry]["email"]
     @inquiry.phone_number = params[:inquiry]["phone_number"]
-    @inquiry.date = Datetime.now
+    @inquiry.date = Time.now
     if @inquiry.save
       redirect_to new_path, :notice => "Your inquiry was submitted!"
     else
